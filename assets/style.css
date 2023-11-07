@@ -1,3 +1,6 @@
+/* Import font family */
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
 /* General style */
 *{
     margin: 0;
@@ -8,6 +11,24 @@
 /* The font to be used on all pages */
 :root{
     font-size: 16px;
+}
+/* Name input begin */
+input{
+    width: 100%;
+    background-color:#f1f0f0a8;
+    color: black;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: none;
+}
+input::placeholder{
+    color: #313131;
+}
+/* Name input end */
+
+/* Quiz Title */
+h1{
+    font-size: 1.5rem;
 }
 #game{
     height: 100vh;
