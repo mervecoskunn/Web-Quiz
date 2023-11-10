@@ -21,3 +21,13 @@ export const WelcomeScreenElements ={
     startButton
 }
 let activeScreen = "screen-welcome";
+
+export const changeScreen =(screenName) =>{
+    activeScreen = screenName;
+    const screenElements =document.querySelectorAll(".screen");
+    screenElements.forEach((screen) =>{
+        screen.style.display ="none";
+    })
+    console.log(screenName);
+    document.getElementById(screenName).style ="";
+}
