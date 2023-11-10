@@ -1,11 +1,17 @@
 /* We imported the elements we selected in Dom.js to use in our welcomeScreen.js file. */
 import{WelcomeScreenElements,audioEl} from './DOM.js';
-/*
- We will add properties with addEventListener to manipulate the elements we have previously selected in a function.
- */
+
 
  const { rulesButtonEl, rulesModalCloseButtonEl, rulesModalEl, soundButton, levelButtons, inputUsername, startButton } = WelcomeScreenElements;
 
+ /*By default, it is generally assumed that medium level will be selected and the program is started with it selected. */
+
+ let selectedLevel = "medium"
+
+ let username = ""
+/*
+ We will add properties with addEventListener to manipulate the elements we have previously selected in a function.
+ */
 export const initEvents = () => {
     /* Click event */
     rulesButtonEl.addEventListener("click",()=>{
@@ -26,5 +32,14 @@ export const initEvents = () => {
             audioEl.pause();
         }
     })
+    // select level event
+    levelButtons.forEach((levelButton) =>{
+        levelButton.addEventListener ("click", ()=>{
+            selectedLevel = levelButton.getAttribute("data-level")
+            levelButtons.forEach((levelButton)=>levelButton.classList.remove("active"))
+            levelButton.classList.add("active")
+        })
+    })
+
 
 }
