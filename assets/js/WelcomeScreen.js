@@ -1,5 +1,5 @@
 /* We imported the elements we selected in Dom.js to use in our welcomeScreen.js file. */
-import{WelcomeScreenElements} from './DOM.js';
+import{WelcomeScreenElements,audioEl} from './DOM.js';
 /*
  We will add properties with addEventListener to manipulate the elements we have previously selected in a function.
  */
