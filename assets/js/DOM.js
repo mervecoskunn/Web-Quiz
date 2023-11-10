@@ -7,7 +7,7 @@ const rulesModalCloseButtonEl = document.querySelector('#rules-modal span');
 const soundButton = document.querySelector('#screen-welcome #header span');
 const inputUserName = document.querySelector('#screen-welcome input #input-username');
 const levelButtons = document.querySelectorAll('#screen-welcome .level-buttons .level-button');
-const startButton = document.querySelector('#screen-welcome button #start-button');
+const startButton = document.querySelector('#screen-welcome button#start-button');
 
 /* In order to manipulate the elements we assign to the variable, we must export them and we can use them this way. */
 
@@ -22,12 +22,15 @@ export const WelcomeScreenElements ={
 }
 let activeScreen = "screen-welcome";
 
-export const changeScreen =(screenName) =>{
+export const changeScreen = (screenName) => {
     activeScreen = screenName;
-    const screenElements =document.querySelectorAll(".screen");
-    screenElements.forEach((screen) =>{
-        screen.style.display ="none";
+
+    const screensElements = document.querySelectorAll(".screen");
+    screensElements.forEach((screen) => {
+        screen.style.display = "none";
     })
     console.log(screenName);
-    document.getElementById(screenName).style ="";
+    document.getElementById(screenName).style = "";
+
+
 }
