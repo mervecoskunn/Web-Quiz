@@ -1,5 +1,5 @@
 /* We imported the elements we selected in Dom.js to use in our welcomeScreen.js file. */
-import{WelcomeScreenElements,audioEl} from './DOM.js';
+import{WelcomeScreenElements,audioEl,changeScreen} from './DOM.js';
 
 
  const { rulesButtonEl, rulesModalCloseButtonEl, rulesModalEl, soundButton, levelButtons, inputUsername, startButton } = WelcomeScreenElements;
@@ -39,6 +39,15 @@ export const initEvents = () => {
             levelButtons.forEach((levelButton)=>levelButton.classList.remove("active"))
             levelButton.classList.add("active")
         })
+    })
+    inputUsername.addEventListener("keyup",(e) =>{
+        if(e.key == "Enter" && e.target.value.length >=3){
+            changeScreen("screen-game")
+        }
+        username = e.target.value
+    })
+    startButton.addEventListener("click",()=>{
+        username.length >=3 && changeScreen("screen-game")
     })
 
 

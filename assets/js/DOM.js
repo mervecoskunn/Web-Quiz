@@ -20,3 +20,4 @@ export const WelcomeScreenElements ={
     levelButtons,
     startButton
 }
+let activeScreen = "screen-welcome";
