@@ -51,7 +51,7 @@ export const initEvents = () => {
     })
 
     startButton.addEventListener("click",()=> {
-        username.length >= 3 && changeScreen("screen-game")
+        username.length >=3 && changeScreen("screen-game") 
     })
 
 
