@@ -1,0 +1,563 @@
+[
+    {
+      "question": "What does HTML stand for?",
+      "options": {
+        "a": "Hyper Text Markup Language",
+        "b": "Highly Typed Modular Language",
+        "c": "Hyperlink and Text Markup Language",
+        "d": "Home Tool Markup Language"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which tag is used to link an external CSS file?",
+      "options": {
+        "a": "<style>",
+        "b": "<link>",
+        "c": "<css>",
+        "d": "<external>"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the JavaScript 'getElementById' function?",
+      "options": {
+        "a": "To get the value of an element",
+        "b": "To retrieve an element by its ID",
+        "c": "To create a new HTML element",
+        "d": "To check if an element exists"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which event is triggered when a user clicks on an HTML element?",
+      "options": {
+        "a": "onchange",
+        "b": "onmouseover",
+        "c": "onclick",
+        "d": "onsubmit"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "In CSS, what property is used to set the background color of an element?",
+      "options": {
+        "a": "color",
+        "b": "background-color",
+        "c": "bgcolor",
+        "d": "background"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What does the 'src' attribute specify in an HTML 'script' tag?",
+      "options": {
+        "a": "Style",
+        "b": "Source",
+        "c": "Script",
+        "d": "Speech"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which HTML tag is used for creating an unordered list?",
+      "options": {
+        "a": "<ol>",
+        "b": "<dl>",
+        "c": "<ul>",
+        "d": "<list>"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "What is the purpose of the CSS 'box-sizing' property?",
+      "options": {
+        "a": "To set the height and width of an element",
+        "b": "To specify whether an element should float",
+        "c": "To include padding and border in the element's total width and height",
+        "d": "To set the position of an element"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": {
+        "a": "var",
+        "b": "let",
+        "c": "const",
+        "d": "variable"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": {
+        "a": "Counter Style Sheets",
+        "b": "Cascading Style Sheets",
+        "c": "Computer Style Sheets",
+        "d": "Colorful Style Sheets"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which HTML tag is used to define an anchor or hyperlink?",
+      "options": {
+        "a": "<link>",
+        "b": "<a>",
+        "c": "<hlink>",
+        "d": "<anchor>"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "How can you comment out multiple lines in JavaScript?",
+      "options": {
+        "a": "// This is a comment",
+        "b": "/* This is a comment */",
+        "c": "# This is a comment",
+        "d": "' This is a comment"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the default position property in CSS?",
+      "options": {
+        "a": "static",
+        "b": "relative",
+        "c": "absolute",
+        "d": "fixed"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which HTML tag is used for creating a table?",
+      "options": {
+        "a": "<table>",
+        "b": "<tr>",
+        "c": "<td>",
+        "d": "<th>"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What is the purpose of the 'break' statement in JavaScript?",
+      "options": {
+        "a": "To break out of a loop or switch statement",
+        "b": "To create a line break in the code",
+        "c": "To stop the execution of a function",
+        "d": "To terminate the program"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which CSS property is used to control the space between the elements' border and content?",
+      "options": {
+        "a": "margin",
+        "b": "padding",
+        "c": "border-spacing",
+        "d": "spacing"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the 'addEventListener' method in JavaScript?",
+      "options": {
+        "a": "To add a new HTML element",
+        "b": "To listen for events on an HTML element",
+        "c": "To create a function",
+        "d": "To remove an HTML element"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which HTML tag is used for creating a line break?",
+      "options": {
+        "a": "<br>",
+        "b": "<lb>",
+        "c": "<line-break>",
+        "d": "<newline>"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What is the purpose of the 'text-align' property in CSS?",
+      "options": {
+        "a": "To set the font size",
+        "b": "To align text vertically",
+        "c": "To align text horizontally",
+        "d": "To set the line height"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "In JavaScript, what is the purpose of the 'return' statement?",
+      "options": {
+        "a": "To print a value to the console",
+        "b": "To stop the execution of a function",
+        "c": "To exit a loop",
+        "d": "To return a value from a function"
+      },
+      "correct-answer": "d"
+    },
+    {
+      "question": "Which HTML tag is used to create a hyperlink?",
+      "options": {
+        "a": "<link>",
+        "b": "<a>",
+        "c": "<hlink>",
+        "d": "<anchor>"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the 'box-shadow' property in CSS?",
+      "options": {
+        "a": "To add a border around an element",
+        "b": "To create a shadow behind an element",
+        "c": "To control the size of an element",
+        "d": "To set the background color of an element"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "How can you include an external JavaScript file in your HTML document?",
+      "options": {
+        "a": "<js>",
+        "b": "<script src='filename.js'></script>",
+        "c": "<include js='filename.js'>",
+        "d": "<external src='filename.js'></external>"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which CSS property is used to change the text color of an element?",
+      "options": {
+        "a": "text-color",
+        "b": "color",
+        "c": "font-color",
+        "d": "text-style"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "In JavaScript, what is the purpose of the 'querySelector' method?",
+      "options": {
+        "a": "To select the first element that matches a specified CSS selector",
+        "b": "To select all elements that match a specified CSS selector",
+        "c": "To select an element by its ID",
+        "d": "To select an element by its class name"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which HTML tag is used for creating a horizontal rule?",
+      "options": {
+        "a": "<line>",
+        "b": "<hr>",
+        "c": "<rule>",
+        "d": "<horizontal>"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the CSS 'position' property?",
+      "options": {
+        "a": "To set the font size",
+        "b": "To align text horizontally",
+        "c": "To control the positioning method used for an element",
+        "d": "To set the line height"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "How do you add a comment in HTML?",
+      "options": {
+        "a": "// This is a comment",
+        "b": "<!-- This is a comment -->",
+        "c": "# This is a comment",
+        "d": "' This is a comment"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which event is triggered when a user submits a form?",
+      "options": {
+        "a": "onchange",
+        "b": "onmouseover",
+        "c": "onsubmit",
+        "d": "onclick"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "What is the purpose of the 'classList' property in JavaScript?",
+      "options": {
+        "a": "To get the value of an element",
+        "b": "To retrieve an element by its ID",
+        "c": "To manipulate the classes of an element",
+        "d": "To check if an element exists"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "In CSS, what does the 'display: none;' property do?",
+      "options": {
+        "a": "Hides the element",
+        "b": "Shows the element",
+        "c": "Moves the element to the right",
+        "d": "Aligns the element to the center"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which HTML tag is used for creating a drop-down list?",
+      "options": {
+        "a": "<list>",
+        "b": "<dropdown>",
+        "c": "<select>",
+        "d": "<input type='dropdown'>"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "What is the purpose of the 'toFixed' method in JavaScript?",
+      "options": {
+        "a": "To round a number to the nearest integer",
+        "b": "To convert a string to a number",
+        "c": "To fix the decimal places of a floating-point number",
+        "d": "To add decimal places to a number"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "Which CSS property is used to control the space between the elements' border and margin?",
+      "options": {
+        "a": "padding",
+        "b": "margin",
+        "c": "border-spacing",
+        "d": "spacing"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What is the purpose of the 'appendChild' method in JavaScript?",
+      "options": {
+        "a": "To append a new HTML element",
+        "b": "To append a child element to a parent element",
+        "c": "To create a new HTML element",
+        "d": "To remove an HTML element"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which HTML tag is used for creating a form?",
+      "options": {
+        "a": "<form>",
+        "b": "<input>",
+        "c": "<button>",
+        "d": "<fieldset>"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What is the purpose of the 'transition' property in CSS?",
+      "options": {
+        "a": "To set the duration of an animation",
+        "b": "To control the transition between two states of an element",
+        "c": "To set the font size",
+        "d": "To change the color of an element"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "In JavaScript, what is the purpose of the 'Math.random()' function?",
+      "options": {
+        "a": "To generate a random number between 0 and 1",
+        "b": "To round a number to the nearest integer",
+        "c": "To check if a number is NaN",
+        "d": "To convert a string to a number"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which CSS property is used to set the height of an element?",
+      "options": {
+        "a": "height",
+        "b": "size",
+        "c": "width",
+        "d": "length"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What does the 'let' keyword do in JavaScript?",
+      "options": {
+        "a": "Declares a constant variable",
+        "b": "Declares a block-scoped variable",
+        "c": "Declares a global variable",
+        "d": "Declares a function"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "In JavaScript, what is a closure?",
+      "options": {
+        "a": "A way to close a browser tab",
+        "b": "A function that has access to variables from its outer function, even after the outer function has finished executing",
+        "c": "A method to close the browser window",
+        "d": "A built-in JavaScript object"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the 'this' keyword in JavaScript?",
+      "options": {
+        "a": "Refers to the current HTML document",
+        "b": "Refers to the current function",
+        "c": "Refers to the current instance of an object",
+        "d": "Refers to the parent element of an HTML element"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "What is the difference between '==' and '===' in JavaScript?",
+      "options": {
+        "a": "No difference, they are interchangeable",
+        "b": "'==' compares both value and type, while '===' compares only value",
+        "c": "'==' compares only value, while '===' compares both value and type",
+        "d": "'===' is not a valid comparison operator"
+      },
+      "correct-answer": "c"
+    },
+    {
+      "question": "In CSS, what is the purpose of the 'flexbox' layout?",
+      "options": {
+        "a": "To create flexible grids",
+        "b": "To style text with different fonts",
+        "c": "To add shadows to elements",
+        "d": "To set the background color of an element"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "How do you center an element horizontally in CSS?",
+      "options": {
+        "a": "text-align: center;",
+        "b": "margin: auto;",
+        "c": "float: center;",
+        "d": "align: center;"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the 'async' keyword in JavaScript?",
+      "options": {
+        "a": "To define a function as asynchronous",
+        "b": "To include an external JavaScript file",
+        "c": "To check if a variable is defined",
+        "d": "To create a new HTML element"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "In JavaScript, what is the 'prototype' property used for?",
+      "options": {
+        "a": "To define the prototype of an object",
+        "b": "To include an external JavaScript file",
+        "c": "To create a new HTML element",
+        "d": "To set the background color of an element"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What does the 'position: relative;' CSS property do?",
+      "options": {
+        "a": "Positions the element absolutely, relative to its closest positioned ancestor",
+        "b": "Positions the element relative to its normal position in the document flow",
+        "c": "Floats the element to the right",
+        "d": "Centers the element horizontally"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "In JavaScript, what is the purpose of the 'fetch' API?",
+      "options": {
+        "a": "To fetch data from a database",
+        "b": "To fetch resources asynchronously across the network",
+        "c": "To fetch the current date and time",
+        "d": "To fetch user input from a form"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "How can you add an event listener to an HTML element in JavaScript?",
+      "options": {
+        "a": "addEvent('click', function);",
+        "b": "addEventListener('click', function);",
+        "c": "listen('click', function);",
+        "d": "on('click', function);"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the 'transition' property in CSS?",
+      "options": {
+        "a": "To set the duration of an animation",
+        "b": "To control the transition between two states of an element",
+        "c": "To set the font size",
+        "d": "To change the color of an element"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "Which JavaScript method is used to remove the last element from an array?",
+      "options": {
+        "a": "pop()",
+        "b": "remove()",
+        "c": "delete()",
+        "d": "last()"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "What is the purpose of the 'flex-grow' property in CSS?",
+      "options": {
+        "a": "To specify the order of a flex item",
+        "b": "To control the flexibility of a flex item",
+        "c": "To set the background color of a flex item",
+        "d": "To add a shadow to a flex item"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "In JavaScript, what does the 'map' method do for arrays?",
+      "options": {
+        "a": "Applies a function to each element and returns a new array",
+        "b": "Concatenates two arrays",
+        "c": "Returns the first element of the array",
+        "d": "Checks if all elements pass a test"
+      },
+      "correct-answer": "a"
+    },
+    {
+      "question": "Which CSS property is used to set the font size of an element?",
+      "options": {
+        "a": "size",
+        "b": "font-size",
+        "c": "text-size",
+        "d": "fontsize"
+      },
+      "correct-answer": "b"
+    },
+    {
+      "question": "What is the purpose of the 'localStorage' object in JavaScript?",
+      "options": {
+        "a": "Stores data in a cookie",
+        "b": "Stores data locally on the user's computer",
+        "c": "Stores data on the server",
+        "d": "Stores data in a session"
+      },
+      "correct-answer": "b"
+    }
+  ]
+  
