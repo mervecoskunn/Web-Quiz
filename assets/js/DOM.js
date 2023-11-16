@@ -1,5 +1,7 @@
 
 export const audioEl = document.querySelector("audio#game-music");
+export const wrongAudioEl = document.querySelector("audio#wrong-sound");
+export const correctAudioEl = document.querySelector("audio#correct-sound");
 
 const rulesButtonEl = document.getElementById("rules-button");
 const rulesModalEl = document.getElementById("rules-modal");

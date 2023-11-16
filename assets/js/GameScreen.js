@@ -1,14 +1,33 @@
-import { GameScreenElements, changeScreen } from "./DOM.js"
+import {
+  GameScreenElements,
+  changeScreen,
+  wrongAudioEl,
+  correctAudioEl,
+} from "./DOM.js";
 import { initScreen as initResultScreen } from "./ResultScreen.js";
 
-const { confirmButton, nextQuestionButton,
-  headerQuestionNumber, headerScore, optionA,
-  optionB, optionC, optionD, questionNumberEl, questionTextEl,
-  headerTime, optionsEl
+const {
+  confirmButton,
+  nextQuestionButton,
+  headerQuestionNumber,
+  headerScore,
+  optionA,
+  optionB,
+  optionC,
+  optionD,
+  questionNumberEl,
+  questionTextEl,
+  headerTime,
+  optionsEl,
 } = GameScreenElements;
 
-//we are using state.js for reach state on all screens
-import { getScore, setScore, setTime, getSelectedLevel } from './State.js'
+import {
+  getScore,
+  setScore,
+  setTime,
+  getSelectedLevel,
+  getIsSoundOn,
+} from "./State.js";
 
 const fetchQuetions = async () => {
   let URL = "/assets/json/Questions.json";
@@ -48,8 +67,8 @@ export const getRandomQuestions = async () => {
 let limits = {
   easy: 4,
   medium: 3,
-  hard: 1
-}
+  hard: 1,
+};
 
 let timerInterval;
 let time = 0;
@@ -59,7 +78,6 @@ let tempSelectedOption = null;
 let scorePerQuestion = 10;
 let wrongs = 0;
 
-
 const startTimeTick = () => {
   timerInterval = setInterval(() => {
     time += 100;
@@ -67,31 +85,31 @@ const startTimeTick = () => {
     let seconds = Math.floor((time % (1000 * 60)) / 1000);
     headerTime.innerHTML = `Time: ${minutes}:${seconds}`;
   }, 100);
-
-}
+};
 
 const renderActiveQuestion = () => {
-
   //render question content
   const activeQuestion = questions[activeQuestionIndex];
   questionNumberEl.innerHTML = activeQuestionIndex + 1;
   questionTextEl.innerHTML = activeQuestion.question;
 
   //render question options
-  optionA.innerText = 'A) ' + activeQuestion.options.a
-  optionB.innerText = 'B) ' + activeQuestion.options.b
-  optionC.innerText = 'C) ' + activeQuestion.options.c
-  optionD.innerText = 'D) ' + activeQuestion.options.d
+  optionA.innerText = "A) " + activeQuestion.options.a;
+  optionB.innerText = "B) " + activeQuestion.options.b;
+  optionC.innerText = "C) " + activeQuestion.options.c;
+  optionD.innerText = "D) " + activeQuestion.options.d;
 
   //render header content
-  headerQuestionNumber.innerHTML = `Question ${activeQuestionIndex + 1} of ${questions.length}`
-  headerScore.innerHTML = `Score: ${getScore()}`
+  headerQuestionNumber.innerHTML = `Question ${activeQuestionIndex + 1} of ${
+    questions.length
+  }`;
+  headerScore.innerHTML = `Score: ${getScore()}`;
 
   //change next question button text for last question
   if (activeQuestionIndex == questions.length - 1) {
-    nextQuestionButton.innerText = "Finish"
+    nextQuestionButton.innerText = "Finish";
   } else {
-    nextQuestionButton.innerText = "Next"
+    nextQuestionButton.innerText = "Next";
   }
 };
 
@@ -102,14 +120,13 @@ const clearOptions = () => {
     option.classList.remove("correct");
     option.classList.remove("wrong");
   });
-}
+};
 
 const nextQuestion = () => {
   if (activeQuestionIndex + 1 < questions.length) {
     activeQuestionIndex++;
     renderActiveQuestion();
-  }
-  else {
+  } else {
     clearInterval(timerInterval);
     setTime(time);
   }
@@ -119,13 +136,20 @@ const nextQuestion = () => {
 const checkOption = () => {
   const activeQuestion = questions[activeQuestionIndex];
   const correctOption = activeQuestion["correct-answer"];
-
   if (tempSelectedOption == correctOption) {
+    //if isSoundOn is true, play wrong sound
+    // let isSoundOn = getIsSoundOn();
+    // if (isSoundOn) {
+    //   correctAudioEl.play();
+    // }
+    getIsSoundOn() && correctAudioEl.play();
+
     setScore(getScore() + scorePerQuestion);
     let correctOptionEl = document.getElementById(correctOption);
     correctOptionEl.classList.add("correct");
   } else {
-    //yanlış yapma durumu
+    //if isSoundOn is true, play wrong sound
+    getIsSoundOn() && wrongAudioEl.play();
     let correctOptionEl = document.getElementById(correctOption);
     correctOptionEl.classList.add("correct");
     let selectedOptionEl = document.getElementById(tempSelectedOption);
@@ -140,11 +164,9 @@ const checkOption = () => {
         initResultScreen();
       });
     }
-
   }
-
   renderActiveQuestion();
-}
+};
 
 export const initGame = async () => {
   questions = await getRandomQuestions();
@@ -152,12 +174,10 @@ export const initGame = async () => {
   startTimeTick();
 };
 
-
-
 const handleConfirmButton = () => {
   checkOption();
   confirmButton.style.display = "none";
-}
+};
 
 const handleNextQuestionButton = () => {
   if (activeQuestionIndex + 1 == questions.length) {
@@ -167,12 +187,14 @@ const handleNextQuestionButton = () => {
       initResultScreen();
     });
   } else nextQuestion();
-}
+};
 
 const handleOptionClick = (e) => {
-  if (e.target.id) { //tıklanılan yerde id varsa (bir option tıklanmışsa)
+  if (e.target.id) {
+    //tıklanılan yerde id varsa (bir option tıklanmışsa)
 
-    if (!e.target.classList.contains("selected")) { // tıklanılan option zaten seçili değilse
+    if (!e.target.classList.contains("selected")) {
+      // tıklanılan option zaten seçili değilse
       clearOptions();
     }
 
@@ -186,11 +208,9 @@ const handleOptionClick = (e) => {
       confirmButton.style.display = "none";
     }
   }
-}
-
+};
 
 export const initScreen = () => {
-
   confirmButton.addEventListener("click", handleConfirmButton);
 
   nextQuestionButton.addEventListener("click", handleNextQuestionButton);
@@ -205,6 +225,3 @@ function clearEvents() {
   nextQuestionButton.removeEventListener("click", handleNextQuestionButton);
   optionsEl.removeEventListener("click", handleOptionClick);
 }
-
-
-
