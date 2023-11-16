@@ -1,20 +1,20 @@
 /* We imported the elements we selected in Dom.js to use in our welcomeScreen.js file. */
 import{
-    WelcomeScreenElements,changeScreen,audioEl
+    WelcomeScreenElements,changeScreen
 } from './DOM.js';
+import { initScreen as initGameScreen } from './GameScreen.js';
+
 
 
  const { rulesButtonEl, rulesModalCloseButtonEl, rulesModalEl, soundButton, levelButtons, inputUsername, startButton } = WelcomeScreenElements;
 
- /*By default, it is generally assumed that medium level will be selected and the program is started with it selected. */
 
- let selectedLevel = "medium"
 
- let username = ""
+
 /*
  We will add properties with addEventListener to manipulate the elements we have previously selected in a function.
  */
-export const initEvents = () => {
+export const initScreen = () => {
     /* Click event */
     rulesButtonEl.addEventListener("click",()=>{
         /*add open class to modal */
@@ -37,7 +37,7 @@ export const initEvents = () => {
     // select level event
     levelButtons.forEach((levelButton) =>{
         levelButton.addEventListener ("click", ()=>{
-            selectedLevel = levelButton.getAttribute("data-level")
+            SetSelectedLevel(levelButton.getAttribute("data-level"))
             levelButtons.forEach((levelButton)=>levelButton.classList.remove("active"))
             levelButton.classList.add("active")
         })
@@ -45,13 +45,17 @@ export const initEvents = () => {
     inputUsername.addEventListener("keyup", (e) => {
         if (e.key == "Enter" && e.target.value.length >= 3) {
             
-            changeScreen("screen-game")
+            changeScreen("screen-game", ()=>{
+                initGameScreen();
+            })
         }
-        username = e.target.value
+        setUsername(e.target.value)
     })
 
     startButton.addEventListener("click",()=> {
-        username.length >=3 && changeScreen("screen-game") 
+        getUsername().length >=3 && changeScreen("screen-game",()=>{
+            initGameScreen();
+        }) 
     })
 
 

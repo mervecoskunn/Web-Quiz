@@ -24,7 +24,8 @@ generateRandomUniqueQuestionNumbers =()=>{
     return randomUniqueQuestionNumbers;
 }
 /* We have previously created unique question numbers, now we are saving them to an array to use the questions that are the content of those question numbers, that is, the indexes. */
-export const deneme = async () => {
+export const getRandomQuestions = async ()
+ =>{
     let questionNumbers = generateRandomUniqueQuestionNumbers();
     
     let questions =await fetchQuestions();
@@ -33,6 +34,8 @@ export const deneme = async () => {
         return questions[questionNumber];
     });
 
-    console.log("randomQuestions",randomQuestions);
+    return  randomQuestions;
 
 }
+
+

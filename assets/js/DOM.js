@@ -17,21 +17,28 @@ export const WelcomeScreenElements = {
     soundButton,
     levelButtons,
     inputUsername,
-    startButton
+    startButton,
 }
+/* active screen is saved to session storage and this information is kept up to date until the session is closed. */
+const setPersistedActiveScreen = (newActiveScreen) => {
+    sessionStorage.setItem("activeScreen", newActiveScreen);
+  }; 
+/* Active screen opens when session storage is added or welcome screen opens in all other cases. */
+  export const getActiveScreen = () => {
+    const activeScreen = sessionStorage.getItem("activeScreen");
+    if (activeScreen) {
+      return activeScreen;
+    } else {
+      return "screen-welcome";
+    }
+  };  
 
-
-let activeScreen = "screen-welcome";
-
-export const changeScreen = (screenName) => {
-    activeScreen = screenName;
-
+  export const changeScreen = (screenName, initScreenEvents) => {
+    setPersistedActiveScreen(screenName);
     const screensElements = document.querySelectorAll(".screen");
     screensElements.forEach((screen) => {
-        screen.style.display = "none";
-    })
-    console.log(screenName);
+      screen.style.display = "none";
+    });
     document.getElementById(screenName).style = "";
-
-
-}
+    initScreenEvents();
+  };
