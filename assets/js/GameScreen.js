@@ -156,13 +156,15 @@ const checkOption = () => {
     selectedOptionEl.classList.add("wrong");
     wrongs++;
     if (wrongs > limits[getSelectedLevel()]) {
-      clearInterval(timerInterval);
-      setTime(time);
-      changeScreen("screen-result", () => {
-        activeQuestionIndex = 0;
-        clearEvents();
-        initResultScreen();
-      });
+      setTimeout(() => {
+        clearInterval(timerInterval);
+        setTime(time);
+        changeScreen("screen-result", () => {
+          activeQuestionIndex = 0;
+          clearEvents();
+          initResultScreen();
+        });
+      }, 1000);
     }
   }
   renderActiveQuestion();

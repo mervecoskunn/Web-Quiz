@@ -11,6 +11,9 @@
   font-size: 16px;
 }
 
+
+
+
 input {
   width: 100%;
   background-color: #f1f0f0a8;
@@ -65,6 +68,19 @@ h1 {
   align-items: center;
   gap: 1rem;
   position: relative;
+}
+
+#screen-welcome .username-error{
+  max-width:200px;
+  word-wrap: break-word;
+  display: none;
+  background-color: red;
+  color:white;
+  font-size: 0.7rem;
+  padding: 10px;
+  border-radius: 10px;
+  gap:5px;
+  align-items: center;
 }
 
 #screen-welcome .header {
@@ -270,6 +286,9 @@ h1 {
   scale: 0.9;
   color: white;
 }
+
+
+
 
 /* Mobile devices */
 @media screen and (max-width: 768px) {

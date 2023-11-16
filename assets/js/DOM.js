@@ -1,4 +1,3 @@
-
 export const audioEl = document.querySelector("audio#game-music");
 export const wrongAudioEl = document.querySelector("audio#wrong-sound");
 export const correctAudioEl = document.querySelector("audio#correct-sound");
@@ -18,6 +17,10 @@ const levelButtons = document.querySelectorAll(
   "#screen-welcome .level-buttons .level-button"
 );
 
+const usernameErrorEl = document.querySelector(
+  "#screen-welcome .username-error"
+);
+
 export const WelcomeScreenElements = {
   rulesButtonEl,
   rulesModalEl,
@@ -29,8 +32,12 @@ export const WelcomeScreenElements = {
 };
 
 const confirmButton = document.querySelector("#screen-game button#confirm");
-const nextQuestionButton = document.querySelector("#screen-game button#next-question");
-const headerQuestionNumber = document.querySelector("#screen-game .header .question-number");
+const nextQuestionButton = document.querySelector(
+  "#screen-game button#next-question"
+);
+const headerQuestionNumber = document.querySelector(
+  "#screen-game .header .question-number"
+);
 const headerScore = document.querySelector("#screen-game .header .score");
 const questionNumberEl = document.querySelector("#question-number");
 const questionTextEl = document.querySelector("#question-text");
@@ -53,9 +60,8 @@ export const GameScreenElements = {
   optionC,
   optionD,
   headerTime,
-  optionsEl
-}
-
+  optionsEl,
+};
 
 // Result Screen Elements
 
@@ -63,9 +69,12 @@ const messageEl = document.querySelector("#screen-result #message");
 const scoreEl = document.querySelector("#screen-result .score");
 const timeEl = document.querySelector("#screen-result .time");
 const levelEl = document.querySelector("#screen-result .level");
-const playAgainButton = document.querySelector("#screen-result button#play-again");
-const nextLevelButton = document.querySelector("#screen-result button#next-level");
-
+const playAgainButton = document.querySelector(
+  "#screen-result button#play-again"
+);
+const nextLevelButton = document.querySelector(
+  "#screen-result button#next-level"
+);
 
 export const ResultScreenElements = {
   messageEl,
@@ -73,8 +82,8 @@ export const ResultScreenElements = {
   timeEl,
   levelEl,
   playAgainButton,
-  nextLevelButton
-}
+  nextLevelButton,
+};
 
 const setPersistedActiveScreen = (newActiveScreen) => {
   sessionStorage.setItem("activeScreen", newActiveScreen);
@@ -97,4 +106,11 @@ export const changeScreen = (screenName, initScreenEvents) => {
   });
   document.getElementById(screenName).style = "";
   initScreenEvents();
+};
+
+export const showUsernameError = () => {
+  usernameErrorEl.style.display = "flex";
+  setTimeout(() => {
+    usernameErrorEl.style.display = "none";
+  }, 3000);
 };
