@@ -19,6 +19,7 @@ const {
   questionTextEl,
   headerTime,
   optionsEl,
+  wrongsEl,
 } = GameScreenElements;
 
 import {
@@ -27,6 +28,8 @@ import {
   setTime,
   getSelectedLevel,
   getIsSoundOn,
+  getWrongCount,
+  setWrongCount,
 } from "./State.js";
 
 const fetchQuetions = async () => {
@@ -76,7 +79,6 @@ let questions = [];
 let activeQuestionIndex = 0;
 let tempSelectedOption = null;
 let scorePerQuestion = 10;
-let wrongs = 0;
 
 const startTimeTick = () => {
   timerInterval = setInterval(() => {
@@ -154,8 +156,10 @@ const checkOption = () => {
     correctOptionEl.classList.add("correct");
     let selectedOptionEl = document.getElementById(tempSelectedOption);
     selectedOptionEl.classList.add("wrong");
-    wrongs++;
-    if (wrongs > limits[getSelectedLevel()]) {
+    let wrongCount = getWrongCount();
+    setWrongCount(wrongCount + 1);
+    renderWrongs();
+    if (wrongCount + 1 > limits[getSelectedLevel()]) {
       setTimeout(() => {
         clearInterval(timerInterval);
         setTime(time);
@@ -170,10 +174,17 @@ const checkOption = () => {
   renderActiveQuestion();
 };
 
+const renderWrongs = () => {
+  let wrongCount = getWrongCount();
+  wrongsEl.innerHTML = `Wrongs: ${wrongCount}/${limits[getSelectedLevel()]}`;
+};
+
 export const initGame = async () => {
   questions = await getRandomQuestions();
   renderActiveQuestion();
+  time = 0;
   startTimeTick();
+  renderWrongs();
 };
 
 const handleConfirmButton = () => {

@@ -46,6 +46,7 @@ const optionB = document.querySelector(".option#b");
 const optionC = document.querySelector(".option#c");
 const optionD = document.querySelector(".option#d");
 const headerTime = document.querySelector("#screen-game .header .time");
+const wrongsEl = document.querySelector("#screen-game .header .wrongs");
 const optionsEl = document.querySelector(".options");
 
 export const GameScreenElements = {
@@ -61,6 +62,7 @@ export const GameScreenElements = {
   optionD,
   headerTime,
   optionsEl,
+  wrongsEl,
 };
 
 // Result Screen Elements
@@ -69,6 +71,7 @@ const messageEl = document.querySelector("#screen-result #message");
 const scoreEl = document.querySelector("#screen-result .score");
 const timeEl = document.querySelector("#screen-result .time");
 const levelEl = document.querySelector("#screen-result .level");
+const resultWrongsEl = document.querySelector("#screen-result .wrongs");
 const playAgainButton = document.querySelector(
   "#screen-result button#play-again"
 );
@@ -83,6 +86,7 @@ export const ResultScreenElements = {
   levelEl,
   playAgainButton,
   nextLevelButton,
+  resultWrongsEl
 };
 
 const setPersistedActiveScreen = (newActiveScreen) => {
