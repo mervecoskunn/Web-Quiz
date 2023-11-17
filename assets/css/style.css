@@ -11,9 +11,6 @@
   font-size: 16px;
 }
 
-
-
-
 input {
   width: 100%;
   background-color: #f1f0f0a8;
@@ -55,7 +52,7 @@ h1 {
   border: 3px black solid;
   border-radius: 20px;
   padding: 50px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Welcome Screen Begin */
@@ -70,16 +67,16 @@ h1 {
   position: relative;
 }
 
-#screen-welcome .username-error{
-  max-width:200px;
+#screen-welcome .username-error {
+  max-width: 200px;
   word-wrap: break-word;
   display: none;
   background-color: red;
-  color:white;
+  color: white;
   font-size: 0.7rem;
   padding: 10px;
   border-radius: 10px;
-  gap:5px;
+  gap: 5px;
   align-items: center;
 }
 
@@ -92,18 +89,37 @@ h1 {
 }
 
 #screen-welcome #rules-modal {
-  position: relative;
+  position: absolute;
   display: none;
-  background-color: deeppink;
+  background-color: rgb(20, 255, 118);
   font-size: 0.6rem;
   padding: 10px;
   border-radius: 10px;
-  width: 60%;
-  height: 50%;
+  width:fit-content;
+  min-width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5rem;
 }
 
+#screen-welcome #rules-modal h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+#screen-welcome #rules-modal p{
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#screen-welcome #rules-modal p::before{
+  content: "📍 ";
+}
 #screen-welcome #rules-modal.open {
-  display: block;
+  display: flex;
   position: absolute;
 }
 
@@ -240,8 +256,6 @@ h1 {
 
 /* Game Screen End */
 
-
-
 /* Result Screen Begin */
 
 #screen-result {
@@ -254,16 +268,21 @@ h1 {
   user-select: none;
 }
 
-#screen-result .stats{
+#screen-result .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#screen-result .stats {
   display: flex;
   gap: 1rem;
   padding: 10px;
   border-radius: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
-#screen-result .stats h2{
+#screen-result .stats h2 {
   border-bottom: 1px black solid;
   border-top: 1px black solid;
   padding-bottom: 0.5rem;
@@ -272,23 +291,54 @@ h1 {
   word-wrap: break-word;
 }
 
-#screen-result .buttons{
+#screen-result .buttons {
   display: flex;
   gap: 1rem;
   width: 100%;
 }
-#screen-result .buttons button{
+#screen-result .buttons button {
   transition: all 0.2s ease-in-out;
 }
 
-#screen-result .buttons button:hover{
+#screen-result .buttons button:hover {
   background-color: rgb(75, 177, 228);
   scale: 0.9;
   color: white;
 }
 
+#screen-result .feedback .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  gap: 10px;
+}
+#screen-result .feedback .content textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px black solid;
+  border-radius: 2px;
+  padding: 4px;
+}
 
-
+.thanks {
+  width: 260px;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: sandybrown;
+}
+.thanks p{
+  font-size: 0.8rem;
+  color:white;
+}
+.thanks span{
+  color:green;
+}
 
 /* Mobile devices */
 @media screen and (max-width: 768px) {
@@ -298,7 +348,6 @@ h1 {
   .screen {
     padding: 10px;
   }
-
 }
 
 /* 2k screens and above */

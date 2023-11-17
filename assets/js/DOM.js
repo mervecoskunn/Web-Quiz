@@ -72,12 +72,19 @@ const scoreEl = document.querySelector("#screen-result .score");
 const timeEl = document.querySelector("#screen-result .time");
 const levelEl = document.querySelector("#screen-result .level");
 const resultWrongsEl = document.querySelector("#screen-result .wrongs");
+const feedbackInputEl = document.querySelector(
+  "#screen-result #feedback-input"
+);
+const feedbackSendEl = document.querySelector("#screen-result #feedback-send");
 const playAgainButton = document.querySelector(
   "#screen-result button#play-again"
 );
 const nextLevelButton = document.querySelector(
   "#screen-result button#next-level"
 );
+
+const feedbackContent = document.querySelector(".feedback .content");
+const feedbackThanks = document.querySelector(".feedback .thanks");
 
 export const ResultScreenElements = {
   messageEl,
@@ -86,7 +93,11 @@ export const ResultScreenElements = {
   levelEl,
   playAgainButton,
   nextLevelButton,
-  resultWrongsEl
+  resultWrongsEl,
+  feedbackInputEl,
+  feedbackSendEl,
+  feedbackContent,
+  feedbackThanks,
 };
 
 const setPersistedActiveScreen = (newActiveScreen) => {

@@ -25,15 +25,13 @@
         </div>
         <div id="rules-modal">
           <span class="material-symbols-outlined"> close </span>
-          <div>
-            <h2>Rules</h2>
-            <p>Answer the questions in the given time.</p>
-            <p>Each correct answer gives you 10 points.</p>
-            <p>Easy Mode has 5 wrong answers.</p>
-            <p>Medium Mode has 3 wrong answers.</p>
-            <p>Hard Mode has 2 wrong answers.</p>
-            <p>Good luck!</p>
-          </div>
+          <h2>Rules</h2>
+          <p>Each correct answer gives you 10 points.</p>
+          <p>Easy Mode has 4 wrong answers.</p>
+          <p>Medium Mode has 3 wrong answers.</p>
+          <p>Hard Mode has 1 wrong answers.</p>
+          <p>if you want you can try again each level or pass next level.</p>
+          <p>Good luck!</p>
         </div>
         <div class="header">
           <button id="rules-button">rules</button>
@@ -92,16 +90,33 @@
       </div>
 
       <div class="screen" id="screen-result">
-        <h1 id="message">Congratulations Ahmet!</h1>
-        <div class="stats">
-          <h2 class="score">Score : 90</h2>
-          <h2 class="time">Time : 1m 90s</h2>
-          <h2 class="wrongs">Wrongs : 1 </h2>
-          <h2 class="level">Level : Medium</h2>
+        <div class="content">
+          <h1 id="message">Congratulations Ahmet!</h1>
+          <div class="stats">
+            <h2 class="score">Score : 90</h2>
+            <h2 class="time">Time : 1m 90s</h2>
+            <h2 class="wrongs">Wrongs : 1</h2>
+            <h2 class="level">Level : Medium</h2>
+          </div>
+          <div class="buttons">
+            <button id="play-again">Play Again</button>
+            <button id="next-level">Next Level</button>
+          </div>
         </div>
-        <div class="buttons">
-          <button id="play-again">Play Again</button>
-          <button id="next-level">Next Level</button>
+
+        <div class="feedback">
+          <div class="thanks">
+            <span class="material-symbols-outlined"> check_circle </span>
+            <p>Thanks for your feedback!</p>
+          </div>
+          <div class="content">
+            <p>Write a feedback !</p>
+            <textarea
+              id="feedback-input"
+              placeholder="Write a feedback !"
+            ></textarea>
+            <button id="feedback-send">Send</button>
+          </div>
         </div>
       </div>
     </div>
