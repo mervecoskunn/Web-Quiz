@@ -51,7 +51,7 @@ import {
   
     inputUsername.addEventListener("keyup", (e) => {
       if (e.key == "Enter" && checkUsername(e.target.value)) {
-        //Start butonuna basılınca ne oluyorsa aynısı olsun
+        //The same thing happens when you press the start button.
         changeScreen("screen-game", () => {
           initGameScreen();
         });

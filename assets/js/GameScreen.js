@@ -55,7 +55,7 @@ export const generateRandomUniqueQuestionNumbers = () => {
 };
 
 export const getRandomQuestions = async () => {
-  // 10 elemanlı rastgele (0-56 arası) benzersiz sayılardan oluşan array döndürür.
+  // Returns a 10-element array of random (0-56) unique numbers.
   let questionNumbers = generateRandomUniqueQuestionNumbers();
 
   let questions = await fetchQuetions();
@@ -204,14 +204,14 @@ const handleNextQuestionButton = () => {
 
 const handleOptionClick = (e) => {
   if (e.target.id) {
-    //tıklanılan yerde id varsa (bir option tıklanmışsa)
+    //If there is an id where clicked (if an option was clicked)
 
     if (!e.target.classList.contains("selected")) {
-      // tıklanılan option zaten seçili değilse
+      // If the option clicked is not already selected
       clearOptions();
     }
 
-    e.target.classList.toggle("selected"); // seçili elemanın "selected" class'ını toggle'la (ekle/kaldır)
+    e.target.classList.toggle("selected"); //toggle (add/remove) the "selected" class of the selected element
 
     if (e.target.classList.contains("selected")) {
       tempSelectedOption = e.target.id;
