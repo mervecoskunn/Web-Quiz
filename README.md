@@ -103,3 +103,16 @@ When the selected level comes to an end, the user will be shown the result scree
   - Among the 56 questions in the JSON file, 10 questions are random asked to the user for each level.
   - The purpose of the game is a small challenge to test the level of users who are trying to improve themselves in this field.
   - This quiz is of course not an official criterion.
+
+## Feature Features
+  - Taking into account the feedback from users, more content, questions on new topics and new rules can be added.
+  
+# Technologies Used
+
+  - [HTML5](https://www.w3schools.com/html/default.asp) - All content and structure of the quiz project has been created.
+  - [CSS](https://www.w3schools.com/css/default.asp) -  All colors and page designs of the quiz project were created.
+  - [JavaScript](https://www.w3schools.com/js/default.asp) - provides the interactivity.
+  - [Wireframe.cc](https://wireframe.cc/) - used to create the wireframes.
+  - [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+  - [Github](https://github.com) - used to host and edit the website.
+  - [Chatgpt](https://chat.openai.com/) - Chatgpt was used in the json file to create 56 questions.
