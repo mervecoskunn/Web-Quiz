@@ -42,7 +42,8 @@ const hideBlocker = () => {
 }
 
 const fetchQuetions = async () => {
-  let URL = "/assets/json/Questions.json";
+  let URL = "./assets/json/Questions.json";
+  console.log(URL);
   try {
     const response = await fetch(URL);
     const data = await response.json();
