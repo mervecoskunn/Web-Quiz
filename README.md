@@ -9,3 +9,18 @@
 
 ![Am I Responsive?](media/images/../../assets/media/images/Web-quiz-responsive.png)
 
+# User Experience(UX)
+
+### User Stories:
+  * As a user, I want to be able to easily understand the purpose of the site when I open it.
+  * As a user, I want to easily access and understand the rules I need to follow.
+  * As a user, I want to easily navigate between pages on the site.
+  * As a user, I want to start the quiz easily and access the questions without any problems.
+  * * As a user, I want to be supported with reactions appropriate to my correct or incorrect answers when answering quiz questions.    
+  * As a user, I want to see my success rate at the difficulty level I choose.
+  * As a user, I want to be clearly guided to easily advance to other levels or try the same level again if I wish.
+  * As a user, I want to be able to contact the admin of the quiz program if I want.
+  
+
+
+
