@@ -49,6 +49,8 @@ const headerTime = document.querySelector("#screen-game .header .time");
 const wrongsEl = document.querySelector("#screen-game .header .wrongs");
 const optionsEl = document.querySelector(".options");
 
+const blockerEl = document.querySelector(".options .blocker");
+
 export const GameScreenElements = {
   confirmButton,
   nextQuestionButton,
@@ -63,6 +65,7 @@ export const GameScreenElements = {
   headerTime,
   optionsEl,
   wrongsEl,
+  blockerEl
 };
 
 // Result Screen Elements

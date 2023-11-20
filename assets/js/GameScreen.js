@@ -20,6 +20,7 @@ const {
   headerTime,
   optionsEl,
   wrongsEl,
+  blockerEl
 } = GameScreenElements;
 
 import {
@@ -31,6 +32,14 @@ import {
   getWrongCount,
   setWrongCount,
 } from "./State.js";
+
+const showBlocker = () => {
+  blockerEl.style.display = "block";
+}
+
+const hideBlocker = () => {
+  blockerEl.style.display = "none";
+}
 
 const fetchQuetions = async () => {
   let URL = "/assets/json/Questions.json";
@@ -55,7 +64,7 @@ export const generateRandomUniqueQuestionNumbers = () => {
 };
 
 export const getRandomQuestions = async () => {
-  // Returns a 10-element array of random (0-56) unique numbers.
+  // 10 elemanlı rastgele (0-56 arası) benzersiz sayılardan oluşan array döndürür.
   let questionNumbers = generateRandomUniqueQuestionNumbers();
 
   let questions = await fetchQuetions();
@@ -90,6 +99,7 @@ const startTimeTick = () => {
 };
 
 const renderActiveQuestion = () => {
+
   //render question content
   const activeQuestion = questions[activeQuestionIndex];
   questionNumberEl.innerHTML = activeQuestionIndex + 1;
@@ -102,9 +112,8 @@ const renderActiveQuestion = () => {
   optionD.innerText = "D) " + activeQuestion.options.d;
 
   //render header content
-  headerQuestionNumber.innerHTML = `Question ${activeQuestionIndex + 1} of ${
-    questions.length
-  }`;
+  headerQuestionNumber.innerHTML = `Question ${activeQuestionIndex + 1} of ${questions.length
+    }`;
   headerScore.innerHTML = `Score: ${getScore()}`;
 
   //change next question button text for last question
@@ -180,16 +189,20 @@ const renderWrongs = () => {
 };
 
 export const initGame = async () => {
+
   questions = await getRandomQuestions();
   renderActiveQuestion();
+  clearOptions();
   time = 0;
   startTimeTick();
   renderWrongs();
+  hideBlocker();
 };
 
 const handleConfirmButton = () => {
   checkOption();
   confirmButton.style.display = "none";
+  showBlocker();
 };
 
 const handleNextQuestionButton = () => {
@@ -200,19 +213,17 @@ const handleNextQuestionButton = () => {
       initResultScreen();
     });
   } else nextQuestion();
+  hideBlocker();
 };
 
 const handleOptionClick = (e) => {
   if (e.target.id) {
-    //If there is an id where clicked (if an option was clicked)
-
+    //tıklanılan yerde id varsa (bir option tıklanmışsa)
     if (!e.target.classList.contains("selected")) {
-      // If the option clicked is not already selected
+      // tıklanılan option zaten seçili değilse
       clearOptions();
     }
-
-    e.target.classList.toggle("selected"); //toggle (add/remove) the "selected" class of the selected element
-
+    e.target.classList.toggle("selected"); // seçili elemanın "selected" class'ını toggle'la (ekle/kaldır)
     if (e.target.classList.contains("selected")) {
       tempSelectedOption = e.target.id;
       confirmButton.style.display = "block";
