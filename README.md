@@ -116,3 +116,19 @@ When the selected level comes to an end, the user will be shown the result scree
   - [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
   - [Github](https://github.com) - used to host and edit the website.
   - [Chatgpt](https://chat.openai.com/) - Chatgpt was used in the json file to create 56 questions.
+
+# Testing
+
+## Code Validation
+
+Web Quiz has be throughly tested. All the code has been run through the [W3C html validator](https://validator.w3.org/), the [W3C CSS validator](https://jigsaw.w3.org/css-validator/) and the JavaScript [JSHint validator](https://jshint.com/). The code passed all of the validators once minor points had been corrected.
+
+The HTML validator results are here:
+![Html Validation](assets/media/images/HTML-Validation.png)
+
+The CSS validator results are here:
+![Css Validation](assets/media/images/CSS-Validation.png)
+
+JsHint Validation  
+
+
