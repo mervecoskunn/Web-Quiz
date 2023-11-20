@@ -93,5 +93,6 @@ When the selected level comes to an end, the user will be shown the result scree
 
   - After all the questions at the level chosen by the user are answered, that is, after all 10 questions are answered, the result screen will appear and here you will find all the information about the game and the score.
   - If the user wishes, user can try the same level again or move on to the next level.
-  
+  - After the user has accessed the information about the score, a box has been added so that the project owner can give us feedback so that we can be better, and when the send button is clicked after the message he writes there, an e-mail will be sent to our previously determined e-mail address.
+
 ![Result-page](assets/media/images/Result-screen-page.png)  
