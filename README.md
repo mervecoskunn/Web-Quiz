@@ -57,4 +57,21 @@ When the selected level comes to an end, the user will be shown the result scree
   
   * I took care to use relaxing and warm colors. I generally used purple and its shades and the eye-friendly biscuit color as the background color.
   * I used blue colors if the questions were selected, and red and green colors, which are more eye-catching, to show correct and incorrect answers. Since these are generally used colors, I aimed to enable the user to act quickly with a familiar situation and judgment in these situations.
-  * 
+  
+## Features
+
+### Existing Features
+
+- Rules pop-up
+ - Designed to give the user an introduction to the site and to explain the rules of the game.
+ - Three difficulty levels have been determined in the quiz, and explanatory information has been shared about how many mistakes user can make at these levels, how user can move on to the next level, or how user can end the quiz.
+
+![Rules-pop-up](assets/media/images/rules-pop-up.png)
+
+- Welcome Screen
+  - In the Welcome Screen, the user must enter a username of at least 3 letters.
+  - User can check the rules by clicking the Rules button.
+  - The user can turn the sound on or off if user wishes from the sound icon.
+  - After entering the username, you can start the quiz by clicking the start button.
+  - 
+![Welcome Screen](assets/media/images/Welcome-Screen-Page.png)  
