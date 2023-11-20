@@ -73,5 +73,19 @@ When the selected level comes to an end, the user will be shown the result scree
   - User can check the rules by clicking the Rules button.
   - The user can turn the sound on or off if user wishes from the sound icon.
   - After entering the username, you can start the quiz by clicking the start button.
-  - 
+  
 ![Welcome Screen](assets/media/images/Welcome-Screen-Page.png)  
+
+- Question Screen
+  - When the user comes to the question page, user will see information about the time period, which question user is on and the mistakes user can make in the bar above.
+ 
+![Question page](assets/media/images/Question-page.png)
+
+  - When the user makes a selection, the selected favorite will be displayed to the user with a blue highlighter feature.
+  
+![Selected Option](assets/media/images/Selected-option.png)
+
+  - If the user will approve the selected number, the answer will be added to the control system by pressing the comfirm button.
+  - and if the result of the check is correct, it is confirmed with the green highlighter feature and at the same time, if the sound is on, it is confirmed with the sound effect. If the answer is incorrect, the selected answer is shown in red, and the correct answer is shown in green.
+  
+![Comfirm-question](/assets/media/images/Comfirm-option.png)
