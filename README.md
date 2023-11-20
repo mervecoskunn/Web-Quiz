@@ -21,6 +21,19 @@
   * As a user, I want to be clearly guided to easily advance to other levels or try the same level again if I wish.
   * As a user, I want to be able to contact the admin of the quiz program if I want.
   
+## Wireframes
+   I roughly designed the project using [wireframs.cc](https://wireframe.cc/)
+
+   #### Welcome Screen
+![Welcome-screen](assets/media/images/welcomescreen.png)
+
+  #### Question Screen
+
+![Question-screen](assets/media/images/Questionscreen.png)
+
+  #### Result Screen
+
+![Result-screen](assets/media/images/Result-screen.png)
 
 
 
