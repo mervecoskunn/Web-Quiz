@@ -88,6 +88,7 @@ When the selected level comes to an end, the user will be shown the result scree
   - If the user will approve the selected number, the answer will be added to the control system by pressing the comfirm button.
   - and if the result of the check is correct, it is confirmed with the green highlighter feature and at the same time, if the sound is on, it is confirmed with the sound effect. If the answer is incorrect, the selected answer is shown in red, and the correct answer is shown in green.
   - Another feature is that if the user wants to skip the question without answering it, user will just have to press the next button.
+  - For each level, the user is given the right to make a predetermined number of mistakes, and these rights are counted backwards during the quiz. If the user has made the maximum mistake user can make for the level he has chosen, that level is finished for that moment and sent to the result screen. If the user wishes, user can try again in the same way or go to the next level and try users luck there.
   
 ![Comfirm-question](/assets/media/images/Comfirm-option.png)
 
