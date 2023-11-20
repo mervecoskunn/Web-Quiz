@@ -248,11 +248,16 @@ h1 {
 }
 
 #screen-game .content button:hover {
-  background-color: rgb(75, 177, 228);
+  /* background-color: rgb(75, 177, 228);
   rotate: 10deg;
   scale: 1.1;
   color: white;
+  */
+  background-color: rgb(75, 177, 228);
+  transform: rotate(10deg) scale(1.1);
+  color: white;
 }
+ 
 
 /* Game Screen End */
 
@@ -302,7 +307,7 @@ h1 {
 
 #screen-result .buttons button:hover {
   background-color: rgb(75, 177, 228);
-  scale: 0.9;
+  transform: scale(0.9);
   color: white;
 }
 
