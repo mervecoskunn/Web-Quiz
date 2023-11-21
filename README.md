@@ -7,7 +7,7 @@
  A small area is reserved for users to give feedback just below the score page at the end of the quiz.  
 
 
-![Am I Responsive?](media/images/../../assets/media/images/Web-quiz-responsive.png)
+![Am I Responsive?](media/images/../../assets/media/images/AmIResponsivePhoto.png)
 
 # User Experience(UX)
 
