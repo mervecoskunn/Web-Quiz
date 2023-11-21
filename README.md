@@ -57,6 +57,9 @@ When the selected level comes to an end, the user will be shown the result scree
   
   * I took care to use relaxing and warm colors. I generally used purple and its shades and the eye-friendly biscuit color as the background color.
   * I used blue colors if the questions were selected, and red and green colors, which are more eye-catching, to show correct and incorrect answers. Since these are generally used colors, I aimed to enable the user to act quickly with a familiar situation and judgment in these situations.
+  * Here you can see the colors and color codes used in the project.
+
+![color palet](assets/media/images/color-palet.png)
   
 ## Features
 
