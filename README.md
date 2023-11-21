@@ -149,7 +149,7 @@ The site was deployed to GitHub pages. The steps to deploy a site are as follows
 
 The live link to the Github repository can be found here: 
 
-[live link](mervecoskunn.github.io/Web-Quiz/)
+[Web Quiz Live Link](https://mervecoskunn.github.io/Web-Quiz/)
 
 
 
