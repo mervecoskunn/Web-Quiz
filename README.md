@@ -138,10 +138,14 @@ The CSS validator results are here:
 
 The site was deployed to GitHub pages. The steps to deploy a site are as follows:
 
-1.In the GitHub repository, navigate to the Settings tab.
-2.Once in Settings, navigate to the Pages tab on the left hand side.
-3.Under Source, select the branch to master or main, then click save.
-4.Once the main branch has been selected, the page will be automatically refreshed with a green ribbon display to indicate the successful deployment.
+1. In the GitHub repository, navigate to the Settings tab.
+
+2. Once in Settings, navigate to the Pages tab on the left hand side.
+
+3. Under Source, select the branch to master or main, then click save.
+
+4. Once the main branch has been selected, the page will be automatically refreshed with a green ribbon display to indicate the successful deployment.
+
 
 The live link to the Github repository can be found here: 
 
