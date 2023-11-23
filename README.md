@@ -155,7 +155,7 @@ The live link to the Github repository can be found here:
 ## Content
   * The font came from [Google Fonts](https://fonts.google.com/)
   * [Wireframe.cc](https://wireframe.cc/)used to create the wireframes.
-  * Chatgpt was used in the json file to create 56 questions.[Chatgpt](https://chat.openai.com/)
+  * [Chatgpt](https://chat.openai.com/) was used in the json file to create 56 questions.
 
 # Acknowledgements
 
