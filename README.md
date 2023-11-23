@@ -156,10 +156,11 @@ The live link to the Github repository can be found here:
   * The font came from [Google Fonts](https://fonts.google.com/)
   * [Wireframe.cc](https://wireframe.cc/)used to create the wireframes.
   * [Chatgpt](https://chat.openai.com/) was used in the json file to create 56 questions.
+  * [Emailjs](https://www.emailjs.com/) was used for the feedback mail system.
 
 # Acknowledgements
 
-Web Quiz was completed as a Portfolio Project 2 piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/se/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support.
+Web Quiz was completed as a Portfolio Project 2 piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/se/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
 
 Merve Coskun 2023.
 
