@@ -117,8 +117,7 @@ When the selected level comes to an end, the user will be shown the result scree
   - [JavaScript](https://www.w3schools.com/js/default.asp) - provides the interactivity.
   - [Wireframe.cc](https://wireframe.cc/) - used to create the wireframes.
   - [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
-  - [Github](https://github.com) - used to host and edit the website.
-  - [Chatgpt](https://chat.openai.com/) - Chatgpt was used in the json file to create 56 questions.
+  - [Github](https://github.com) - used to host and edit the website. 
 
 # Testing
 
@@ -150,6 +149,19 @@ The site was deployed to GitHub pages. The steps to deploy a site are as follows
 The live link to the Github repository can be found here: 
 
 [Web Quiz Live Link](https://mervecoskunn.github.io/Web-Quiz/)
+
+# Credits
+
+## Content:
+  * The font came from [Google Fonts](https://fonts.google.com/)
+  * [Wireframe.cc](https://wireframe.cc/)used to create the wireframes.
+  * Chatgpt was used in the json file to create 56 questions.[Chatgpt](https://chat.openai.com/)
+
+# Acknowledgements
+
+Web Quiz was completed as a Portfolio Project 2 piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/se/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support.
+
+Merve Coskun 2023.
 
 
 
