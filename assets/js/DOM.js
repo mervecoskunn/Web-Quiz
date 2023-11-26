@@ -1,7 +1,9 @@
+// Global DOM elements, for all screens
 export const audioEl = document.querySelector("audio#game-music");
 export const wrongAudioEl = document.querySelector("audio#wrong-sound");
 export const correctAudioEl = document.querySelector("audio#correct-sound");
 
+// Welcome Screen Elements Begin
 const rulesButtonEl = document.getElementById("rules-button");
 const rulesModalEl = document.getElementById("rules-modal");
 const rulesModalCloseButtonEl = document.querySelector("#rules-modal span");
@@ -21,6 +23,8 @@ const usernameErrorEl = document.querySelector(
   "#screen-welcome .username-error"
 );
 
+// Welcome Screen Elements End
+
 export const WelcomeScreenElements = {
   rulesButtonEl,
   rulesModalEl,
@@ -30,6 +34,8 @@ export const WelcomeScreenElements = {
   inputUsername,
   startButton,
 };
+
+// Game Screen Elements Begin
 
 const confirmButton = document.querySelector("#screen-game button#confirm");
 const nextQuestionButton = document.querySelector(
@@ -51,6 +57,10 @@ const optionsEl = document.querySelector(".options");
 
 const blockerEl = document.querySelector(".options .blocker");
 
+const homeButtonEl = document.querySelector("#screen-game .header span.home");
+
+// Game Screen Elements End
+
 export const GameScreenElements = {
   confirmButton,
   nextQuestionButton,
@@ -65,7 +75,8 @@ export const GameScreenElements = {
   headerTime,
   optionsEl,
   wrongsEl,
-  blockerEl
+  blockerEl,
+  homeButtonEl
 };
 
 // Result Screen Elements
@@ -89,6 +100,8 @@ const nextLevelButton = document.querySelector(
 const feedbackContent = document.querySelector(".feedback .content");
 const feedbackThanks = document.querySelector(".feedback .thanks");
 
+// Result Screen Elements End
+
 export const ResultScreenElements = {
   messageEl,
   scoreEl,
@@ -103,10 +116,11 @@ export const ResultScreenElements = {
   feedbackThanks,
 };
 
+// set Active Screen in session storage
 const setPersistedActiveScreen = (newActiveScreen) => {
   sessionStorage.setItem("activeScreen", newActiveScreen);
 };
-
+// this function for all screens to get active screen from session storage
 export const getActiveScreen = () => {
   const activeScreen = sessionStorage.getItem("activeScreen");
   if (activeScreen) {
@@ -116,18 +130,27 @@ export const getActiveScreen = () => {
   }
 };
 
+// this function for all screens to change screen
 export const changeScreen = (screenName, initScreenEvents) => {
+  // set active screen in session storage
   setPersistedActiveScreen(screenName);
+  // hide all screens
   const screensElements = document.querySelectorAll(".screen");
   screensElements.forEach((screen) => {
     screen.style.display = "none";
   });
+
+  // show active screen
   document.getElementById(screenName).style = "";
+
+  // call initScreenEvents function of the screen
   initScreenEvents();
 };
 
+// this function for welcome screen to show username error
 export const showUsernameError = () => {
   usernameErrorEl.style.display = "flex";
+  // after 3 seconds hide username error
   setTimeout(() => {
     usernameErrorEl.style.display = "none";
   }, 3000);

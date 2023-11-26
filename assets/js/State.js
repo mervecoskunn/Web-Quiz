@@ -1,3 +1,4 @@
+// ALL FUNCTIONS IN THIS FILE TO READ AND WRITE TO SESSION STORAGE
 export const getUsername = () => {
   return sessionStorage.getItem("username") || "";
 };
@@ -7,6 +8,7 @@ export const setUsername = (username) => {
 };
 
 export const getSelectedLevel = () => {
+  // if level is not set in session storage, returns "medium"
   return sessionStorage.getItem("level") || "medium";
 };
 
@@ -15,6 +17,8 @@ export const setSelectedLevel = (level) => {
 };
 
 export const getScore = () => {
+  // if score is not set in session storage, returns 0
+  // convert score to number from string, because session storage stores values as string
   return Number(sessionStorage.getItem("score")) || 0;
 };
 

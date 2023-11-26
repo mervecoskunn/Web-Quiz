@@ -160,7 +160,7 @@ The live link to the Github repository can be found here:
 
 # Acknowledgements
 
-Web Quiz was completed as a Portfolio Project 2 piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/se/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
+Web Quiz was completed as a Portfolio Project-2 piece for the Full Stack Software Developer Diploma at the [Code Institute](https://codeinstitute.net/se/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
 
 Merve Coskun 2023.
 

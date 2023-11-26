@@ -24,7 +24,10 @@
       <div class="screen" id="screen-welcome">
         <div class="username-error">
           <span class="material-symbols-outlined"> error </span>
-          <p>Please enter minimum 3 characters for username.</p>
+          <p>
+            Please enter minimum 3 characters contains only letters for
+            username.
+          </p>
         </div>
         <!-- Rules Content Begin -->
         <div id="rules-modal">
@@ -34,7 +37,8 @@
           <p>Easy Mode has 4 wrong answers.</p>
           <p>Medium Mode has 3 wrong answers.</p>
           <p>Hard Mode has 1 wrong answers.</p>
-          <p>if you want you can try again each level or pass next level.</p>
+          <p>if you want you can try again each level.</p>
+          <p>You should have minimum 50 points to pass the level.</p>
           <p>Good luck!</p>
         </div>
         <!-- Rules Content End -->
@@ -57,12 +61,13 @@
         </div>
         <button id="start-button">Start</button>
       </div>
-       <!-- Login Content End -->
+      <!-- Login Content End -->
       <!-- Welcome Screen End -->
 
       <!-- Game(Question page) Screen Begin -->
       <div class="screen" id="screen-game">
         <div class="header">
+          <span class="material-symbols-outlined home"> home </span>
           <span class="question-number"> Question : 3/10 </span>
           <span class="score"> score : 150 </span>
           <span class="time"> time : 10s </span>
