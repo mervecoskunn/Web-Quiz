@@ -81,9 +81,12 @@ When the selected level comes to an end, the user will be shown the result scree
 ![Rules-pop-up](assets/media/images/Rules.png)
 
 - Welcome Screen
-  - In the Welcome Screen, the user must enter a username of at least 3 letters.
+
   - User can check the rules by clicking the Rules button.
   - The user can turn the sound on or off if user wishes from the sound icon.
+  - In the Welcome Screen, the user must enter a username of at least 3 letters.
+  - If the user writes a username outside these rules, then user will encounter this warning.
+  ![Errormessage](assets/media/images/error.png)
   - After entering the username, you can start the quiz by clicking the start button.
   
 ![Welcome Screen](assets/media/images/Welcome-Screen-Page.png)  
