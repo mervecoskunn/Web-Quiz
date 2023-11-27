@@ -78,7 +78,7 @@ When the selected level comes to an end, the user will be shown the result scree
  - Designed to give the user an introduction to the site and to explain the rules of the game.
  - Three difficulty levels have been determined in the quiz, and explanatory information has been shared about how many mistakes user can make at these levels, how user can move on to the next level, or how user can end the quiz.
 
-![Rules-pop-up](assets/media/images/rules-pop-up.png)
+![Rules-pop-up](assets/media/images/Rules.png)
 
 - Welcome Screen
   - In the Welcome Screen, the user must enter a username of at least 3 letters.
@@ -91,7 +91,7 @@ When the selected level comes to an end, the user will be shown the result scree
 - Question Screen
   - When the user comes to the question page, user will see information about the time period, which question user is on and the mistakes user can make in the bar above.
  
-![Question page](assets/media/images/Question-page.png)
+![Question page](assets/media/images/Questionscreen1.png)
 
   - When the user makes a selection, the selected favorite will be displayed to the user with a blue highlighter feature.
   
@@ -105,8 +105,19 @@ When the selected level comes to an end, the user will be shown the result scree
 ![Comfirm-question](/assets/media/images/Comfirm-option.png)
 
   - After all the questions at the level chosen by the user are answered, that is, after all 10 questions are answered, the result screen will appear and here you will find all the information about the game and the score.
-  - If the user wishes, user can try the same level again or move on to the next level.
+  - If the user wishes, user can try the same level again or if the user have already minimum 50 points in this level so user can  move on to the next level.
+  
   - After the user has accessed the information about the score, a box has been added so that the project owner can give us feedback so that we can be better, and when the send button is clicked after the message he writes there, an e-mail will be sent to our previously determined e-mail address.
+  - 
+### If user have less than 50 points.
+
+![Result-page](assets/media/images/Opps.png)
+
+### If user have minimum 50 points maximum 80 points.
+
+![Result-page](assets/media/images/Good-Job-Screenshot.png)
+
+### If user have 90 or 100 points.
 
 ![Result-page](assets/media/images/Result-screen-page.png)
 
