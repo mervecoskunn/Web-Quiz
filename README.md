@@ -90,6 +90,7 @@ When the selected level comes to an end, the user will be shown the result scree
 
 - Question Screen
   - When the user comes to the question page, user will see information about the time period, which question user is on and the mistakes user can make in the bar above.
+  - The user can go to the welcome screen, that is, the home page, by clicking the home button whenever user wants.
  
 ![Question page](assets/media/images/Questionscreen1.png)
 
