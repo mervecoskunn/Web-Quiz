@@ -119,7 +119,7 @@ When the selected level comes to an end, the user will be shown the result scree
 
 ### If user have 90 or 100 points.
 
-![Result-page](assets/media/images/Result-screen-page.png)
+![Result-page](assets/media/images/Congr.png)
 
 ## The Web Quiz
   - Web Quiz project consists of Html Css and Javascript questions.
