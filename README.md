@@ -131,6 +131,8 @@ The HTML validator results are here:
 The CSS validator results are here:
 ![Css Validation](assets/media/images/CSS-Validation.png)
 
+Javascript validation was done via [JsHint](https://jshint.com/) and updated with necessary changes.
+
 # Deployment
 
 ### To deploy the project
@@ -157,6 +159,9 @@ The live link to the Github repository can be found here:
   * [Wireframe.cc](https://wireframe.cc/)used to create the wireframes.
   * [Chatgpt](https://chat.openai.com/) was used in the json file to create 56 questions.
   * [Emailjs](https://www.emailjs.com/) was used for the feedback mail system.
+  * The icons used in the project were taken through [Google Material Icons](https://developers.google.com/fonts/docs/material_icons) and used in the project.
+  * Sound files with correct and incorrect effects used in the project were taken from [YouTube](https://www.youtube.com/results?search_query=wrong+sound+effect).
+  * An online editor audio program was used to shorten the waiting times at the beginning and end of the sound effects used.[Editor audio](https://editor.audio/)
 
 # Acknowledgements
 
