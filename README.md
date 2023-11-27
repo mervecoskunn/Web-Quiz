@@ -86,7 +86,7 @@ When the selected level comes to an end, the user will be shown the result scree
   - The user can turn the sound on or off if user wishes from the sound icon.
   - In the Welcome Screen, the user must enter a username of at least 3 letters.
   - If the user writes a username outside these rules, then user will encounter this warning.
-  ![Errormessage](assets/media/images/error.png)
+![Errormessage](assets/media/images/error.png)
   - After entering the username, you can start the quiz by clicking the start button.
   
 ![Welcome Screen](assets/media/images/Welcome-Screen-Page.png)  
