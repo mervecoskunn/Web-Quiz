@@ -7,7 +7,7 @@
  A small area is reserved for users to give feedback just below the score page at the end of the quiz.  
 
 
-![Am I Responsive?](media/images/../../assets/media/images/AmIResponsivePhoto.png)
+![Am I Responsive?](media/images/../../assets/media/images/Top-Responsive-photo.png)
 
 # User Experience(UX)
 
@@ -34,6 +34,15 @@
   #### Result Screen
 
 ![Result-screen](assets/media/images/Result-screen.png)
+
+### OPPS! GAME OVER :(
+The user encounters 10 questions in each level and must answer at least 5 of these questions correctly if the user wants to move on and try the next level. In this case, if the user gets less than 50 points, user will encounter a warning and a button to try the same level again.
+
+### GOOD JOB ! 
+Another situation that may be encountered is if the user obtains a score of 50 points or above but up to 90 points, then the user will be faced with another result screen and the user can pass to the next level or try the same level again if user wishes.
+
+### CONGRATULATIONS !
+If the user obtains a score of 90 points or above, this time the user will be greeted with a result screen as seen in the screenshot above.
 
 ## Site Structure
 
