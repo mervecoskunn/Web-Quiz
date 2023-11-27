@@ -49,7 +49,7 @@ const hideBlocker = () => {
 
 // fetch questions from json file
 const fetchQuestions = async () => {
-  let URL = "/assets/json/Questions.json";
+  let URL = "./assets/json/Questions.json";
   try {
     const response = await fetch(URL);
     const data = await response.json();
